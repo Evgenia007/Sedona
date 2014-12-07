@@ -10,10 +10,28 @@
 	background: @bg-color;
 	color: @text-color;
 		
-	&__container {
+	&__img {
+		display: inline-block;
+		width: 80px;
 		height: 80px;
-		margin-bottom: 19px;
-		vertical-align: bottom;
+		margin-bottom: 11px;
+
+		&--house {
+			background: url(../images/house.png) no-repeat;
+		}
+
+		&--burger {
+			background: url(../images/burger.png) no-repeat 1px 0;
+		}
+
+		&--souvenir {
+			background: url(../images/souvenir.png) no-repeat 6px 0;
+		}
+	}
+
+	&__container {
+		display: block;
+		.clear-after();
 	}
 
 	&__title {
@@ -51,7 +69,7 @@
 		float: right;
 	}
 
-	&__img {
+	&__photo {
 		&--left {
 			float: left;
 		}
@@ -77,11 +95,3 @@
 		}
 	}
 }
-
-.advantages {
-		&__container {
-		display: block;
-		.clear-after();
-	}
-} 
-

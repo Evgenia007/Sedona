@@ -1,0 +1,63 @@
+/*Блок шапки*/
+
+.header {
+	position: relative;
+	height: 563px;
+	text-align: center;
+	background: url(/images/bg-0.jpg) no-repeat;
+
+	&__text {
+		margin-bottom: 40px;
+		font-weight: bold;
+		font-size: 50px;
+		line-height: 50px;
+		text-transform: uppercase;
+		color: @user-color;
+
+		&-decor {
+			display: block;
+			font-weight: normal;
+			font-size: 40px;
+			font-style: italic;
+			text-transform: none;
+			color: @main-color;
+
+			&:before,
+			&:after {
+				display: inline-block;
+				content: "—";
+			}
+		}
+	}
+
+	&__logo {
+		display: inline-block;
+		margin-bottom: 40px;
+		font-size: 107px;
+		letter-spacing: 5px;
+		line-height: 107px;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: @invert-user-color;
+	}
+
+	&__slogan {
+		font-size: 40px;
+		font-style: italic;
+		line-height: 40px;
+		color: @invert-user-color;
+	}
+
+	&:before {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		margin-left: -69px;
+		content: "";
+		display: block;
+		width: 138px;
+		height: 70px;
+		background: url(/images/logo-img.png) no-repeat;
+	}
+}

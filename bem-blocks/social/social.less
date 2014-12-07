@@ -1,0 +1,31 @@
+/*Блок соцсетей*/
+
+.social {
+	display: inline-block;
+	vertical-align: middle;
+	width: 400px;
+	text-align: center;
+
+	&__item {
+		display: inline-block;
+		width: 47px;
+		height: 47px;
+		margin-left: 6px;
+
+		&:first-child {
+			margin-left: 0px;
+		}
+
+		&--twitter {
+			background: url(/images/twitter.png) @user-color no-repeat 15px 16px;
+		}
+
+		&--facebook {
+			background: url(/images/facebook.png) @user-color no-repeat 20px 13px;
+		}
+
+		&--youtube {
+			background: url(/images/youtube.png) @user-color no-repeat 13px 17px;
+		}
+	}
+}

@@ -1,0 +1,97 @@
+/*Блок преимуществ*/
+
+.advantage {
+	display: inline-block;
+	vertical-align: top;
+	width: 280px;
+	padding: 46px 60px 62px;	
+	text-align: center;
+	text-transform: uppercase;
+	background: @bg-color;
+	color: @text-color;
+		
+	&__img {
+		display: inline-block;
+		width: 80px;
+		height: 80px;
+		margin-bottom: 11px;
+
+		&--house {
+			background: url(../images/house.png) no-repeat;
+		}
+
+		&--burger {
+			background: url(../images/burger.png) no-repeat 1px 0;
+		}
+
+		&--souvenir {
+			background: url(../images/souvenir.png) no-repeat 6px 0;
+		}
+	}
+
+	&__container {
+		display: block;
+		.clear-after();
+	}
+
+	&__title {
+		margin-bottom: 9px;
+		line-height: 26px;
+		font-size: 21px;
+	}
+
+	&__number {
+		display: inline-block;
+		margin-bottom: 17px;
+		font-size: 14px;
+
+		&:before,
+		&:after {
+			display: inline-block;
+			content: "—";
+		}
+		
+		&:before {
+			margin-right: 4px;
+		}
+		
+		&:after {
+			margin-left: 4px;
+		}
+	}
+
+	&__text {
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+	&--right {
+		float: right;
+	}
+
+	&__photo {
+		&--left {
+			float: left;
+		}
+
+		&--right {
+			float: right;
+		}
+	}
+
+	&--invert {
+		padding: 52px 60px 57px;
+		background: @user-color;
+		color: @invert-text-color;
+	}
+
+	&--service {
+		padding-top: 60px;
+		padding-bottom: 80px;
+		background: none;
+
+		& .advantage__title {
+			margin-bottom: 21px;
+		}
+	}
+}

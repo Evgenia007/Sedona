@@ -1,0 +1,87 @@
+/*Блок формы*/
+
+.form {
+	&__header {
+		padding: 29px 30px 32px;
+		background: @main-color;
+	}
+
+	&__container {
+		padding: 56px;
+	}
+
+	&__group {
+		display: inline-block;
+		margin-bottom: 29px;
+
+		&--right {
+			float: right;
+		}
+
+		&-title {
+			display: inline-block;
+			vertical-align: middle;
+			width: 100px;
+			margin-right: 10px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		&-input {
+			position: relative;
+			display: inline-block;
+			width: 346px;
+			text-transform: uppercase;
+
+			&--min {
+				width: 100px;
+			}
+		}
+	}
+
+	&__input {
+		display: inline-block;
+		width: 100%;
+		padding: 6px 12px;
+		border: none;
+		background: @bg-input-color;
+		.box-sizing(border-box);
+
+		&--date {
+			position: relative;
+			&:after {
+				content: "";
+				display: block;
+				width: 20px;
+				height: 22px;
+				background: url(images/calendar.png) no-repeat;
+			}
+		}
+	}
+
+	&__title {
+		font-size: 21px;
+		font-weight: bold; 
+		text-transform: uppercase;
+		text-align: center;
+		color: @invert-text-color;
+	}
+
+	&__btn {
+		width: 100%;
+	}
+
+	&--search {
+		position: absolute; 
+		top: -87px;
+		left: 0;
+		right: 0;
+		width: 568px;
+		margin: 0 auto;
+		background: #fff;
+	}
+
+	&__btn {
+		margin-top: 26px;
+	}
+}
